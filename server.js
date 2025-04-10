@@ -10,7 +10,6 @@ const rateLimit=require('express-rate-limit');
 const hpp=require('hpp');
 const cron = require('node-cron');
 // route file
-const hospitals = require('./routes/hospitals');
 const auth = require('./routes/auth');
 const appointments = require('./routes/appointments');
 const restaurants = require('./routes/restaurants');
@@ -50,7 +49,6 @@ app.use(limiter);
 app.use(hpp());
 
 // routers
-app.use('/api/v1/hospitals', hospitals);
 app.use('/api/v1/appointments', appointments);
 app.use('/api/v1/restaurants', restaurants);
 app.use('/api/v1/auth', auth);

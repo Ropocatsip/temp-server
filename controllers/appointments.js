@@ -1,5 +1,4 @@
 const Appointment = require('../models/Appointment');
-// const Hospital = require('../models/Hospital');
 const Restaurant = require('../models/Restaurant');
 
 exports.getAppointments = async (req, res, next) => {

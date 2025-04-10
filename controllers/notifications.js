@@ -50,7 +50,7 @@ const sendEmail = (appt) => {
         from: process.env.AUTH_EMAIL,
         to: appt.user.email,
         subject: "[Notification] from CU Restaurant",
-        html: `<p>Dear, ${appt.user.name}</p><br>
+        html: `<p>Dear ${appt.user.name},</p><br>
             <p>This is a reminder that you have a restaurant reservation at ${appt.restaurant.name}</p>
             <p>📅 Date: ${appt.apptDate}</p>
             <p>👥 Seats: ${appt.seat}</p>

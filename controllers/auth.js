@@ -190,7 +190,7 @@ const sendEmail = (user, otp) => {
         from: process.env.AUTH_EMAIL,
         to: user.email,
         subject: "Authentication from CU Restaurant",
-        html: `<p>Hi, ${user.name}</p><br>
+        html: `<p>Dear ${user.name},</p><br>
             <p>To authenticate, please use the following One Time Password (OTP): ${otp}</p>
             <p>This OTP will be valid for 10 minutes.</p>
             <p>Do not share this OTP with anyone. If you didn't make this request, you can safely ignore this email.<br>CU Restaurant will never contact you about this email or ask for any login codes or links. Beware of phishing scams.</p>
